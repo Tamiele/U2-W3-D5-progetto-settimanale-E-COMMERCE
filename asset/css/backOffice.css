@@ -1,0 +1,30 @@
+body {
+  background-color: rgb(0, 0, 0);
+}
+.navbarColor {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 38%,
+    rgba(242, 108, 38, 1) 100%
+  );
+}
+
+.buttonSave {
+  border: solid 1px #d35f21;
+  color: #d35f21;
+  font-weight: 600;
+}
+.buttonSave:hover {
+  background-color: #d35f21;
+  color: black;
+}
+.buttonReset {
+  border: solid 1px red;
+  font-weight: 600;
+  color: red;
+}
+.buttonReset:hover {
+  background-color: red;
+  color: black;
+}
