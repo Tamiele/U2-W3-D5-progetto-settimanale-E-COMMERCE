@@ -23,9 +23,9 @@ const getCar = function () {
         colonnaCar.classList.add("col", "col-12", "col-md-4", "col-lg-3");
 
         colonnaCar.innerHTML = `
-  <div class="card h-100 shadow rounded-1">
+  <div class="card h-100 shadow rounded-1 borderCar ">
     <img src="${car.imageUrl}" class="card-img-top" alt="car">
-    <div class="card-body d-flex flex-column bg-dark">
+    <div class="card-body d-flex flex-column bg-dark ">
       <h5 class="card-title text-light ms-2 mt-2">${car.name}</h5>
       <p class="card-text text-light flex-grow-1 ms-2">${car.description}</p>
       <p class="card-text text-light ms-2">${car.brand} - ${car.price}€</p>

@@ -30,12 +30,13 @@ const dublicaCarInDetail = function (card) {
   const row = document.querySelector(".row");
   const colonnaCar = document.createElement("div");
   colonnaCar.classList.add("col", "col-12", "col-md-4", "col-lg-3");
-  colonnaCar.innerHTML = `<img src="${card.imageUrl}" class="card-img-top" alt="car">
-          <div class="card-body bg-dark  d-flex flex-column">
-              <h5 class="card-title text-light ms-2 mt-2">${card.name}</h5>
-              <p class="card-text text-light ms-2 flex-grow-1">${card.description}</p>
-               <p class="card-text ms-2 text-light">${card.brand}
-                - ${card.price}€</p>
+  colonnaCar.innerHTML = `
+          <div class="card h-100 shadow rounded-1 borderCar ">
+    <img src="${card.imageUrl}" class="card-img-top" alt="car">
+    <div class="card-body d-flex flex-column bg-dark">
+      <h5 class="card-title text-light ms-2 mt-2">${card.name}</h5>
+      <p class="card-text text-light flex-grow-1 ms-2">${card.description}</p>
+      <p class="card-text text-light ms-2">${card.brand} - ${card.price}€</p>
               <a href="./homepage.html" class="btn buttonDetail rounded-0">VAI ALLA HOME PAGE</a>
                <a href="./backOffice.html?carId=${card._id}" class="btn buttonDetail rounded-0">MODIFICA PRODOTTO</a>
                <a href="#" class="btn buttonDeleteProduct rounded-0">ELIMINA PRODOTTO</a>

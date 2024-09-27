@@ -43,3 +43,7 @@ footer {
   );
   padding: 10px;
 }
+
+.borderCar {
+  border: solid 2px #d35f21;
+}
