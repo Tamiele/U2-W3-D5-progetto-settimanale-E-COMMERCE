@@ -21,8 +21,8 @@ const getCar = function () {
         const row = document.querySelector(".row");
         const colonnaCar = document.createElement("div");
         colonnaCar.classList.add("col", "col-12", "col-md-4", "col-lg-3");
-        colonnaCar.innerHTML = `<img src="${car.imageUrl}" class="card-img-top" alt="car">
-            <div class="card-body bg-dark  d-flex flex-column">
+        colonnaCar.innerHTML = `<img src="${car.imageUrl}" class="card-img-top h-75 w-100 shadow rounded-1" alt="car">
+            <div class="card-body bg-dark  d-flex flex-column object-fit-cover">
                 <h5 class="card-title text-light ms-2 mt-2">${car.name}</h5>
                 <p class="card-text text-light flex-grow-1 ms-2">${car.description}</p>
                  <p class="card-text text-light ms-2">${car.brand}
