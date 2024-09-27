@@ -33,3 +33,13 @@ body {
 .bgModal {
   background-color: #d35f21;
 }
+
+footer {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 38%,
+    rgba(242, 108, 38, 1) 100%
+  );
+  padding: 10px;
+}

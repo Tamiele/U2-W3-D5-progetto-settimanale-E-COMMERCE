@@ -1,5 +1,9 @@
 body {
-  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url(https://costacartrader.com/wp-content/uploads/2021/07/24068423_1480744848711247_1083810563476792798_o-1024x683.jpg);
 }
 .navbarColor {
   background: rgb(0, 0, 0);
@@ -18,4 +22,14 @@ body {
 .buttonDetail:hover {
   background-color: #d35f21;
   color: black;
+}
+
+footer {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 38%,
+    rgba(242, 108, 38, 1) 100%
+  );
+  padding: 10px;
 }

@@ -43,7 +43,11 @@ form.addEventListener("submit", function (e) {
     .then((response) => {
       if (response.ok) {
         console.log(response);
-        alert("Prodotto Modificato");
+        alert(
+          carId
+            ? "Prodotto modificato con successo!"
+            : "Prodotto salvato con successo!"
+        );
         location.assign("./homepage.html");
       } else {
         throw new Error("Errore nella risposta");
