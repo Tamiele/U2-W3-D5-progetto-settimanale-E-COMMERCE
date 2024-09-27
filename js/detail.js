@@ -54,10 +54,9 @@ const dublicaCarInDetail = function (card) {
     );
     deleteConfirmModal.show();
 
-    // Ottieni l'elemento "Elimina" del modale
     const confirmDeleteBtn = document.getElementById("confirmDeleteBtn");
 
-    // Aggiungi un evento click per confermare l'eliminazione e all'interno lancio la fetch delete
+    // Aggiungo un evento click per confermare l'eliminazione e all'interno lancio la fetch delete
     confirmDeleteBtn.addEventListener("click", function () {
       fetch(apiLink + "/" + card._id, {
         method: "DELETE",
