@@ -33,6 +33,24 @@ footer {
   );
   padding: 10px;
 }
-.borderCar {
+.cardEffect {
   border: solid 2px #d35f21;
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-out forwards;
+  transition: filter 0.3s ease;
+}
+
+.cardEffect:hover {
+  filter: brightness(1.3);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

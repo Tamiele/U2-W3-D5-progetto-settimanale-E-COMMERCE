@@ -23,7 +23,7 @@ const getCar = function () {
         colonnaCar.classList.add("col", "col-12", "col-md-4", "col-lg-3");
 
         colonnaCar.innerHTML = `
-  <div class="card h-100 shadow rounded-1 borderCar ">
+  <div class="card h-100 shadow rounded-1 cardEffect ">
     <img src="${car.imageUrl}" class="card-img-top" alt="car">
     <div class="card-body d-flex flex-column bg-dark ">
       <h5 class="card-title text-light ms-2 mt-2">${car.name}</h5>
